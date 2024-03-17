@@ -1,7 +1,8 @@
 # AquaSmart Solutions: AI-Powered Water Sustainability
 
-The system brings together a range of tools aimed at promoting water conservation. To start with it collects information about how much water the user uses, such as shower durations, how often the dishwasher is used, the area code of the location and the size of the household. Using this information the system calculates how much water is typically used for each activity and incorporates the users usage habits to figure out their average water consumption. It then compares the users water usage to what's typically used in their local area. Additionally there is an assistant, on the platform that gives personalized suggestions to help users adjust their water usage habits and contribute to environmental sustainability.
-
+This website uses several features to promote water sustainability. It first obtains necessary information from the user about their water usage, such as their shower duration, toilet flushes, and their dishwasher cycles. It will then calculate the average usage for each of these functions and then multiply it by the user’s inputs to get their average water usage. The website will then take the user’s water usage and then compare it to the average usage in their zip code. The website will also have an AI that will provide guidance to the user on how to change their water usage habits and promote a sustainable environment. 
+**Note**
+For this project, we are not using the exact values of the average water usage for the zip codes, but instead arbitrary values.
 ****Features****
 - Calculates your daily water usage with speciic user inputs
 - Compares your daily water usage to the average in your zip code
@@ -10,6 +11,13 @@ The system brings together a range of tools aimed at promoting water conservatio
 - Stores each chat history in separate text files
 
 ****Getting Started****
-- 
 
-    
+**Prerequisites**
+- Python 3.7+ installed on your system
+- FLask 2.0.1 and OpenAI Python SDK installed
+- Set up your OpenAI API Key
+
+**Installation**
+1. Clone this repository to your local machine:
+
+    git clone
