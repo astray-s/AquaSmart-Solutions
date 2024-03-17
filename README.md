@@ -1,1 +1,3 @@
 # environment_sustainability
+
+This website uses several features to promote water sustainability. It first obtains necessary information from the user about their water usage, such as their shower duration, dishwasher cycles, zip code, and the amount of people in the household. It will then calculate the average usage for each of these functions and then multiply it by the user’s inputs to get their average water usage. The website will then take the user’s water usage and then compare it to the average usage in their zip code. The website will also have an AI that will provide guidance to the user on how to change their water usage habits and promote a sustainable environment. 
