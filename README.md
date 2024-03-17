@@ -71,7 +71,7 @@ Now that you've completed the setup, you can use your very own AquaSmart Solutio
 
    a. Start the Flask app:
       ```bash
-      python main.py
+         python main.py
       ```
        
    b. Open your web browser and go to http://localhost:5000 to interact with your Water Usage Calculator.
