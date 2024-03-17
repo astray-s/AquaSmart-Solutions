@@ -27,12 +27,12 @@ This website uses several features to promote water sustainability. It first obt
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/astray-s/water_usage_calculator.git
+   git clone https://github.com/astray-s/AquaSmart-Solutions.git
     ```
 
-2.  Navigate to the project directory:https://github.com/astray-s/water_usage_calculator
+2.  Navigate to the project directory:https://github.com/astray-s/AquaSmart-Solutions
 ```bash
-cd water_usage_calculator
+cd AquaSmart-Solutions
 ```
 3. Pin your installation to openai==0.28
 ```bash
