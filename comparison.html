@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Usage</title>
+    <style>
+        body {
+            background-image: url('/static/images/waterlily.png');
+            background-size: cover; 
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-position: center -100px;
+            /* overflow: hidden; */
+            /* background-position: 0px 0; */
+            font-family: Arial, sans-serif; /* Set default font */
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            /* height: 75vh; */
+            /* margin: 1200; */
+        }
+
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f7ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+  h1 {
+    color: #106ba3;
+  }
+  label {
+    display: block;
+    margin-top: 20px;
+  }
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #106ba3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0e5a8a;
+  }
+  #comparisonResult {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Water Usage Report</h1>
+        
+    <p>Shower Usage Rate: <i>{{ shower_rate }} gal</i></p>
+    <p>Flush usage rate: <i>{{ toilet_rate }} gal</i></p>
+    <p>Dishwasher usage rate: <i>{{ dishwasher_rate }} gal</i></p>
+    <br>
+    <p>Your water usage: <i>{{ your_usage }} gal</i></p>
+    <br>
+    <p>Your water usage (<strong>{{ your_usage }} gallons</strong>) is {{ level }} your zipcode's average usage of <strong>{{ zip_world_usage }} gallons</strong>. <i>{{ compliment }}</i></p>
+    <br>
+    <br>
+    
+    <a href="/chat">Chat with our AI sustainability specialist to learn how to save water!</a>
+    </div>
+
+</body>
+</html>

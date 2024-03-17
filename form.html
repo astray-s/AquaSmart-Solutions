@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Usage Calculator</title>
+    <style>
+        body {
+            background-image: url('/static/images/background.png');
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            padding: 100px; /* Add padding to center content */
+            /* padding-top: 100px;
+            padding-right: 100px; */
+            /* margin-left: 1000px; */
+            /* background-position: center top; */
+            overflow: hidden;
+            /* background-position: 0px 0; */
+            font-family: Arial, sans-serif; /* Set default font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            /* margin: 1200; */
+        }
+
+        h1 {
+            text-align: left top; /* Align the header to the left */
+            white-space: nowrap;
+            padding: 0px;
+            margin-bottom: 680px; /* Add space below the heading */
+            margin-top: 20px;
+            padding-right: 200px;
+            color: rgba(255, 255, 255, 0.593); /* Set header color to blue */
+            font-size: 50px; /* Increase font size */
+            font-family: 'Courier New', Courier, monospace;
+            border-width: 20px;
+        }
+
+        form {
+            width: 25%;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color to the form */
+            padding: 20px;
+            margin-top: 40px;
+            padding-right: -300px;
+            scale: 1.3;
+            border-radius: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Add space between form groups */
+        }
+
+        label {
+            display: block; /* Display labels as block elements for proper alignment */
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input[type="number"] {
+            width: 100%; /* Make input fields fill the width of their container */
+            padding: 15px; /* Add padding to input fields */
+            border-radius: 10px; /* Add rounded corners to input fields */
+            border: 3px solid #ccc; /* Add border to input fields */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+    
+            font-size: 9px; /* Increase font size */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button[type="submit"] {
+            width: 100%; /* Make submit button fill the width of its container */
+            padding: 15px; /* Add padding to submit button */
+            border: none; /* Remove border */
+            border-radius: 10px; /* Add rounded corners to submit button */
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Button text color */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            font-size: 16px; /* Increase font size */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Button background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Water Usage Calculator</h1>
+        
+    <form method="POST" action="/form">
+        <p style="font-family: 'Courier New', Courier, monospace; font-size: 15px; color: #003670;" align="center"><i><strong>Enter you average daily usages</strong></i></p>
+        <div class="form-group">
+            <label for="zip_code">Zip Code</label>
+            <input type="number" id="zip_code" name="zip_code" placeholder="Enter your zip code..." required>
+        </div>
+        <div class="form-group">
+            <label for="household_people">Number of People in Household</label>
+            <input type="number" id="household_people" name="household_people" placeholder="Enter the amount of people who live in your house..." required>
+        </div>
+        <div class="form-group">
+            <label for="shower_duration">Minutes Spent in Shower</label>
+            <input type="number" id="shower_duration" name="shower_duration" placeholder="Enter your whole household's shower duration in minutes..." required>
+        </div>
+        <div class="form-group">
+            <label for="toilet_flushes">Toilet Flushes</label>
+            <input type="number" id="toilet_flushes" name="toilet_flushes" placeholder="Enter the total amount of times you flush the toilet..." required>
+        </div>
+        <div class="form-group">
+            <label for="dishwasher_cycles">Dishwasher Cycles</label>
+            <input type="number" id="dishwasher_cycles" name="dishwasher_cycles" placeholder="Enter the total number of cycles your dishwasher goes through..." required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
