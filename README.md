@@ -10,4 +10,6 @@ The system brings together a range of tools aimed at promoting water conservatio
     User-friendly interface built with HTML, CSS, and Python
     Stores each chat history in separate text files
 
+****Getting Started****
+
     
