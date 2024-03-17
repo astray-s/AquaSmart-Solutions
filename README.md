@@ -42,7 +42,7 @@ This website uses several features to promote water sustainability. It first obt
    pip3 install openai==0.28
    ```
 
-5. Configure your OpenAI API key.
+4. Configure your OpenAI API key.
 In order to use OpenAI's GPT-3.5 Turbo for intelligent responses in your chatbot, you'll need to configure your OpenAI API key in the chat.py file. Follow these steps:
 
    a. Open chat.py in a text editor or code editor of your choice.
@@ -58,7 +58,7 @@ In order to use OpenAI's GPT-3.5 Turbo for intelligent responses in your chatbot
    d. Save the changes to the chat.py file and exit the text editor.
    With these steps completed, your chatbot application is now set up to use OpenAI's GPT-3.5 Turbo and is ready to be launched.
 
-6. Usage
+5. Usage
 
 Now that you've completed the setup, you can use your very own AquaSmart Solutions: AI-Powered Water Sustainability App!
 
