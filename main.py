@@ -1,8 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request, session
 import jinja2
 from functions import *
-import functions, chatbot
-from chatbot import logs
+import functions
 import openai
 import os
 import time
