@@ -31,15 +31,17 @@ This website uses several features to promote water sustainability. It first obt
     ```
 
 2.  Navigate to the project directory: https://github.com/astray-s/AquaSmart-Solutions
+   
    ```bash
    cd AquaSmart-Solutions
    ```
 3. Pin your installation to openai==0.28
+   
    ```bash
    pip3 install openai==0.28
    ```
 
-4. Configure your OpenAI API key.
+5. Configure your OpenAI API key.
 In order to use OpenAI's GPT-3.5 Turbo for intelligent responses in your chatbot, you'll need to configure your OpenAI API key in the chat.py file. Follow these steps:
 
    a. Open chat.py in a text editor or code editor of your choice.
@@ -64,7 +66,8 @@ Now that you've completed the setup, you can use your very own AquaSmart Solutio
    a. Start the Flask app:
       ```bash
       python main.py
-      ```
+       ```
+       
    b. Open your web browser and go to http://localhost:5000 to interact with your Water Usage Calculator.
 
    c. Enter your average daily usages to calculate your water consumption and click the submit button
