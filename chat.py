@@ -3,7 +3,6 @@ from flask import Flask, render_template, request, redirect
 import openai
 import os
 import time
-# from main import usage
 
 # Set the OpenAI API key
 openai.api_key = "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"
@@ -50,8 +49,6 @@ with open(history_file, 'w') as f:
 # Initialize chat history
 chat_history = ''
 
-    # Create a Flask web application
-    # app = Flask(__name__)
 
     # Function to complete chat input using OpenAI's GPT-3.5 Turbo
 def chatcompletion(user_input, impersonated_role, explicit_input, chat_history):
@@ -89,23 +86,3 @@ def chat(user_input):
     # Function to get a response from the chatbot
 def get_response(userText):
     return chat(userText)
-
-# Define app routes
-# @app.route("/")
-# def index():
-#     return render_template("index.html")
-
-# @app.route("/get")
-# # Function for the bot response
-# def get_bot_response():
-#     userText = request.args.get('msg')
-#     return str(get_response(userText))
-
-# @app.route('/refresh')
-# def refresh():
-#     time.sleep(600) # Wait for 10 minutes
-#     return redirect('/refresh')
-
-# Run the Flask app
-# if __name__ == "__main__":
-#     app.run()
