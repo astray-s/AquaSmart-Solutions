@@ -1,20 +1,5 @@
-
-#html form asks for number of ppl in the house, and zip code, and repeats following form x many times
-#asks for daily shower duration, toilet flushes, dishwasher usage frequency
-#calculations
-    #shower duration * water used per min
-    #toilet flushes * water used per flush
-    #dishwasher usage * water used per cycle
-#compare to average shower duration, toilet flushes, dishwasher usage in the zip code
-
-#if user > average, ask chatgpt to give suggestions to shrink that category's usage
-#if user < average, ask chatgpt to give positive words
-
-#gives a screenshottable summary of water usage and tips to improve it
-
 import csv
 import random
-# import avg_usage
 
 global SHOWER_RATE, FLUSH_RATE, CYCLE_RATE, AVG_USAGE
 SHOWER_RATE = round(21/19, 1)
@@ -35,16 +20,6 @@ def calculate_usage(shower_duration, toilet_flushes, dishwasher_cycles):
     total_usage = round(shower_usage + flush_usage + cycle_usage, 2)
     
     return total_usage, shower_usage, flush_usage, cycle_usage
-
-    # return f"""
-
-    #     Water Usage Per Day (in gallons)\n\n
-    #     Household: {str(ppl)} people\n\n
-    #     Shower Usage: {str(shower_usage)} gallons\n
-    #     Toilet Flush Usage: {str(flush_usage)} gallons\n
-    #     Dishwasher Cycle Usage: {str(cycle_usage)} gallons\n
-    #     Total Usage: {str(total_usage)} gallons\n
-    #     """
 
 def average_usage(zip1):
     water_usage_data = {}
@@ -84,7 +59,6 @@ def comparing(user_water_consumption, zip_water_consumption):
     elif user_water_consumption < zip_water_consumption:
         level = 'below'
         print('You are doing great. Your water consumption level is much lower than average by', str(AVG_USAGE - user_water_consumption), 'gallons')
-        #choose a random statement that tells them to continue lowering their water usage
         compliment = random.choice([
     "Congratulations on your efficient water usage! Keep up the great work!",
     "Great job on conserving water! Your efforts make a positive impact!",
