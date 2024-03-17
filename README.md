@@ -8,10 +8,10 @@ This website uses several features to promote water sustainability. It first obt
 
 ## Features
 
-- Calculates your daily water usage with speciic user inputs
+- Calculates your daily water usage with specific user inputs
 - Compares your daily water usage to the average in your zip code
 - Utilizes OpenAI's GPT 3.5 Turbo for intelligent and practical response
-- User-friendly interface built with HTML, CSS, and Python
+- User-friendly interface built with HTML, CSS, and Flask
 - Stores each chat history in separate text files
 
 ## Getting Started
