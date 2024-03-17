@@ -35,6 +35,7 @@ This website uses several features to promote water sustainability. It first obt
    ```bash
    cd AquaSmart-Solutions
    ```
+
 3. Pin your installation to openai==0.28
    
    ```bash
