@@ -48,13 +48,13 @@ In order to use OpenAI's GPT-3.5 Turbo for intelligent responses in your chatbot
    a. Open chat.py in a text editor or code editor of your choice.
    
    b. Locate the following line in chat.py:
-      ```python
-      openai.api_key = "OPEN_AI_API_KEY"
-      ```
+         ```python
+         openai.api_key = "OPEN_AI_API_KEY"
+         ```
    c. Replace "OPEN_AI_API_KEY" with your actual OpenAI API key. It should look something like this:
-      ```python
-      openai.api_key = "sk-zqn9OVmS71IvKsg10nFiTsgRykFJxlMij3WPjdaxegvhzPB2p"
-      ```
+         ```python
+         openai.api_key = "sk-zqn9OVmS71IvKsg10nFiTsgRykFJxlMij3WPjdaxegvhzPB2p"
+         ```
    d. Save the changes to the chat.py file and exit the text editor.
    With these steps completed, your chatbot application is now set up to use OpenAI's GPT-3.5 Turbo and is ready to be launched.
 
@@ -67,7 +67,7 @@ Now that you've completed the setup, you can use your very own AquaSmart Solutio
    a. Start the Flask app:
       ```bash
       python main.py
-       ```
+      ```
        
    b. Open your web browser and go to http://localhost:5000 to interact with your Water Usage Calculator.
 
