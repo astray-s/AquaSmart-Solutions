@@ -88,3 +88,5 @@ Now that you've completed the setup, you can use your very own AquaSmart Solutio
    f. You can ask questions or advice to the AI such as "based on my usage, what actions can I do to save water?"
 
 ![Screenshot 2024-03-17 152507](https://raw.githubusercontent.com/astray-s/water_usage_calculator/main/static/images/Screenshot%202024-03-17%20152507.png)
+
+   g. If you ever want to view your water usage report again, hover over the circle down below, and a few links will show up.
