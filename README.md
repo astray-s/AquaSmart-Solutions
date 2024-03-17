@@ -32,9 +32,9 @@ This website uses several features to promote water sustainability. It first obt
 
 2.  Navigate to the project directory: https://github.com/astray-s/AquaSmart-Solutions
    
-   ```bash
-   cd AquaSmart-Solutions
-   ```
+      ```bash
+      cd AquaSmart-Solutions
+      ```
 
 3. Pin your installation to openai==0.28
    
